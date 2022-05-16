@@ -1,0 +1,131 @@
+* {
+    font-family: 'Lato';
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 1140px;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.menu-profile img {
+    margin-left: 33px;
+}
+
+.slogan {
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+}
+
+.slogan-man {
+    max-width: 800px;
+    width: 50%;
+}
+
+.slogan-one {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0;
+}
+
+.slogan-two {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+}
+
+.pink {
+    color: #F16D7F;
+}
+
+.slogan-text {
+    width: 380px;
+    height: 94px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-left: 60px;
+}
+
+.content {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
+.stock {
+    width: 1140px;
+    height: 470px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items .item:nth-child(1) {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.7) 0%, rgba(33, 22, 22, 0.7) 100%), url(images/for-woman.png);
+}
+
+.items .item:nth-child(2) {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.7) 0%, rgba(33, 22, 22, 0.7) 100%), url(images/for-man.png);
+}
+
+.items .item:nth-child(3) {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.7) 0%, rgba(33, 22, 22, 0.7) 100%), url(images/for-kids.png);
+}
+
+.items .item:last-child {
+    background-image: linear-gradient(90deg, rgba(33, 22, 22, 0.7) 0%, rgba(33, 22, 22, 0.7) 100%), url(images/accesories.png);
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+}
+
+.item {
+    width: 360px;
+    height: 260px;
+}
+
+
+.item-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.item-for {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    margin: 0;
+}
+
+.item,
+.item-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
