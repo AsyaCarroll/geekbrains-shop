@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all-font/all.min.css">
 </head>
 
 <body>
@@ -59,18 +60,22 @@
         </div>
     </header>
     <div class="new-arr">
-        <h4 class="arr-title"><span class="pink">NEW ARRIVALS</span></h4>
-        <p class="arr-desc">HOME/MEN/<span class="pink">NEW ARRIVALS</span></p>
+        <div class="new-arr-container container">
+            <h4 class="arr-title"><span class="pink">NEW ARRIVALS</span></h4>
+            <p class="arr-desc">HOME/MEN/<span class="pink">NEW ARRIVALS</span></p>
+        </div>
     </div>
     <div class="goods-card">
-        <div class="left-arrow"></div>
-        <img src="" alt="" class="goods-img">
-        <div class="right-arrow"></div>
+        <div class="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <img src="/images/goods-look.jpg" alt="" class="goods-img">
+        <div class="right-arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
     </div>
-    <div class="goods-desc">
-        <h4 class="collection">WOMEN COLLECTION</h4>
+    <div class="goods-desc container">
+        <h4 class="collection"><span class="pink">WOMEN COLLECTION</span></h4>
         <div class="underline">
+            <div class="grey-underline"></div>
             <div class="pink-underline"></div>
+            <div class="grey-underline"></div>
         </div>
         <div class="goods-name">MOSCHINO CHEAP AND CHIC</div>
         <p class="text-desc">
@@ -80,19 +85,17 @@
         </p>
         <div class="material-designer">
             <div class="material">
-                <p>MATERIAL: </p>
-                <p><span class="black">COTTON</span></p>
+                <p>MATERIAL: <span class="black">COTTON</span></p>
             </div>
             <div class="designer">
-                <p>DESIGNER: </p>
-                <p><span class="black">BINBURHAN</span></p>
+                <p>DESIGNER: <span class="black">BINBURHAN</span></p>
             </div>
-            <p class="price"><span class="pink">$561</span></p>
         </div>
+        <p class="price"><span class="pink">$561</span></p>
         <hr>
         <div class="color-size-quantity">
             <div class="goods-color">
-                <p><span class="black">CHOOSE COLOR</span></p>
+                <p class="g-title"><span class="black">CHOOSE COLOR</span></p>
                 <select name="" id="" class="color-select">
                     <option value="Red">Red</option>
                     <option value="Blue">Blue</option>
@@ -100,7 +103,7 @@
                 </select>
             </div>
             <div class="goods-size">
-                <p><span class="black">CHOOSE SIZE</span></p>
+                <p class="g-title"><span class="black">CHOOSE SIZE</span></p>
                 <select name="" id="" class="size-select">
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -108,34 +111,47 @@
                 </select>
             </div>
             <div class="goods-quantity">
-                <p><span class="black">QUANTITY</span></p>
+                <p class="g-title"><span class="black">QUANTITY</span></p>
                 <input type="number" min="1" placeholder="1" class="quantity-inp">
             </div>
         </div>
-        <button>Add to Cart</button>
-        <div class="also-like">
-            <h3 class="also-like--title"><span class="black">YOU MAY LIKE ALSO</span></h3>
-            <div class="also-like--goods">
-                <div class="also-like--card">
-                    <img src="" alt="" class="also-like--img">
+        <button class="add-to-cart-button">
+            <i class="fa fa-cart-arrow-down add-to-cart-icon"></i>
+            Add to Cart</button>
+    </div>
+    <div class="also-like container">
+        <h3 class="also-like--title"><span class="black">YOU MAY LIKE ALSO</span></h3>
+        <div class="also-like--goods">
+            <div class="also-like--card">
+                <img src="/images/also-like.jpg" alt="" class="also-like--img">
+                <div class="also-like--text">
                     <p class="also-like--name">BLAZE LEGGINGS</p>
                     <p class="also-like--price"><span class="pink">$52.00</span></p>
                 </div>
-                <div class="also-like--card">
-                    <img src="" alt="" class="also-like--img">
+            </div>
+            <div class="also-like--card">
+                <img src="/images/also-like.jpg" alt="" class="also-like--img">
+                <div class="also-like--text">
                     <p class="also-like--name">ALEXA SWEATER</p>
                     <p class="also-like--price"><span class="pink">$52.00</span></p>
                 </div>
-                <div class="also-like--card">
-                    <img src="" alt="" class="also-like--img">
+
+            </div>
+            <div class="also-like--card">
+                <img src="/images/also-like.jpg" alt="" class="also-like--img">
+                <div class="also-like--text">
                     <p class="also-like--name">AGNES TOP</p>
                     <p class="also-like--price"><span class="pink">$52.00</span></p>
                 </div>
-                <div class="also-like--card">
-                    <img src="" alt="" class="also-like--img">
+
+            </div>
+            <div class="also-like--card">
+                <img src="/images/also-like.jpg" alt="" class="also-like--img">
+                <div class="also-like--text">
                     <p class="also-like--name">SYLVA SWEATER</p>
                     <p class="also-like--price"><span class="pink">$52.00</span></p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -157,50 +173,54 @@
             </form>
         </div>
     </div>
-    <div class="company-info">
+    <div class="company-info container">
         <div class="brand-info">
             <div class="brand-logo">
                 <img src="images/logo.png" alt="logotype" class="logo">
                 <h1 class="logo-title">BRAN<span class="pink">D</span></h1>
             </div>
+            <div class="brand-desc">
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate
+                    multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                    processes and cross-unit partnerships.</p>
+                <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior
+                    initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
         </div>
-        <div class="brand-desc">
-            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
-                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
-                processes and cross-unit partnerships.</p>
-            <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior
-                initiatives for wireless technologies. Dynamically optimize.</p>
+        <div class="info-container">
+            <div class="company-information">
+                <h4 class="info-title"><span class="pink">COMPANY</span></h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>How It Works</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="company-information">
+                <h4 class="info-title"><span class="pink">INFORMATION</span></h4>
+                <ul>
+                    <li>Tearms & Condition</li>
+                    <li>Privacy Policy</li>
+                    <li>How to Buy</li>
+                    <li>How to Sell</li>
+                    <li>Promotion</li>
+                </ul>
+            </div>
+            <div class="company-information">
+                <h4 class="info-title"><span class="pink">SHOP CATEGORY</span></h4>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Child</li>
+                    <li>Apparel</li>
+                    <li>Brows All</li>
+                </ul>
+            </div>
         </div>
-        <div class="company-info--company">
-            <h4 class="company-title"><span class="pink">COMPANY</span></h4>
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>About</li>
-                <li>How It Works</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="company-info--information">
-            <h4 class="information-title"><span class="pink">INFORMATION</span></h4>
-            <ul>
-                <li>Tearms & Condition</li>
-                <li>Privacy Policy</li>
-                <li>How to Buy</li>
-                <li>How to Sell</li>
-                <li>Promotion</li>
-            </ul>
-        </div>
-        <div class="company-info--shop-category">
-            <h4 class="shop-title"><span class="pink">SHOP CATEGORY</span></h4>
-            <ul>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Child</li>
-                <li>Apparel</li>
-                <li>Brows All</li>
-            </ul>
-        </div>
+
 
     </div>
 
