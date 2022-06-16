@@ -18,6 +18,9 @@ $grey-grey: #eaeaea;
 $text-grey: #898989;
 $md-grey: #b9b9b9;
 $bcbcbc: #bcbcbc;
+$white-pink: #F8F3F4;
+$input-grey: #A4A4A4;
+$input-text-grey: #B1B1B1;
 
 .pink {
     color: $pink;
@@ -845,6 +848,144 @@ body {
     }
 }
 
+.registration-title {
+    background-color: $white-pink;
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.registration-title__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+}
+
+.form-n-benefits {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    padding: 40px 0 96px 0;
+    box-sizing: border-box;
+}
+
+.registration-form {
+    width: 360px;
+}
+
+.registration-name-inputs,
+.registration-details-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-title,
+.details-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.input-reg {
+    border: 1px solid $input-grey;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $input-text-grey;
+    width: 360px;
+    height: 45px;
+    padding: 13px 17px 16px 17px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.gender-selection {
+    margin: 32px 0 32px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-gender {
+    margin-right: 20px;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.password-recomendation {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $input-text-grey;
+}
+
+.join-button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    background-color: $pink;
+    border: none;
+    width: 167px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 29px;
+    cursor: pointer;
+    margin-top: 39px;
+}
+
+.join-button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+.benefits-article {
+    width: 382px;
+}
+
+.benefits__title,
+.benefits__description,
+.benefit {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.benefits__title {
+    margin: 0;
+}
+
+.benefits__description {
+    margin: 32px 0 22px 0;
+}
+
+.fa-check {
+    margin-right: 22px;
+}
+
+.benefit:hover .fa-check {
+    -moz-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    transform: rotate(1turn);
+    transition-duration: 0.5s
+}
+
+
+
+.benefit {
+    margin-bottom: 16px;
+}
 
 
 
