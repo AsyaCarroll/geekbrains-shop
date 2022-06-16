@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .pink {
   color: #F16D7F;
 }
@@ -297,7 +301,6 @@ body {
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  color: #E8E8E8;
   margin: 0;
 }
 
@@ -1011,8 +1014,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 650px;
   padding: 40px 0 96px 0;
   -webkit-box-sizing: border-box;
@@ -1112,7 +1116,7 @@ body {
 }
 
 .benefits-article {
-  width: 382px;
+  width: 48%;
 }
 
 .benefits__title,
