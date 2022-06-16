@@ -22,6 +22,10 @@ $white-pink: #F8F3F4;
 $input-grey: #A4A4A4;
 $input-text-grey: #B1B1B1;
 
+a {
+    text-decoration: none;
+}
+
 .pink {
     color: $pink;
 }
@@ -269,7 +273,6 @@ body {
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
-    color: $almost-white;
     margin: 0;
 }
 
@@ -864,7 +867,7 @@ body {
 
 .form-n-benefits {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 650px;
     padding: 40px 0 96px 0;
     box-sizing: border-box;
@@ -949,7 +952,7 @@ body {
 }
 
 .benefits-article {
-    width: 382px;
+    width: 48%;
 }
 
 .benefits__title,
