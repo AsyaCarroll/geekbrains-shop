@@ -558,6 +558,7 @@ body {
         padding: 65px 0;
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
 
         .arr-title {
             font-size: 24px;
@@ -715,6 +716,7 @@ body {
         line-height: 1.85;
         padding-left: 15px;
         color: $bcbcbc;
+        box-sizing: border-box;
     }
 }
 
@@ -787,6 +789,7 @@ body {
     padding: 109px 0 89px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .brand-info {
         .brand-logo {
@@ -829,6 +832,8 @@ body {
         width: 653px;
 
         .company-information {
+            width: 155px;
+
             .info-title {
                 margin: 0;
                 font-size: 18px;
@@ -971,10 +976,6 @@ body {
     margin: 32px 0 22px 0;
 }
 
-.fa-check {
-    margin-right: 22px;
-}
-
 .benefit:hover .fa-check {
     -moz-transform: rotate(1turn);
     -webkit-transform: rotate(1turn);
@@ -984,13 +985,10 @@ body {
     transition-duration: 0.5s
 }
 
-
-
 .benefit {
     margin-bottom: 16px;
+    padding-left: 22px;
 }
-
-
 
 @media screen and (max-width: 1200px) {
     .container {
@@ -1057,9 +1055,89 @@ body {
     .footer-region {
         padding: 0 32px 0 32px;
     }
+
+    .form-n-benefits {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .registration-title__container {
+        padding: 0 16px;
+    }
+
+    .new-arr .new-arr-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .goods-desc {
+        padding: 63px;
+        width: 642px;
+        position: static;
+        margin: auto;
+    }
+
+    .goods-card {
+        height: 624px;
+        padding: 30px 0;
+
+        .goods-img {
+            height: 100%;
+        }
+    }
+
+    .color-size-quantity {
+        padding: 0;
+    }
+
+    .add-to-cart-button {
+        width: 100%;
+    }
+
+    .also-like {
+        margin-top: 86px;
+        margin-bottom: 128px;
+        padding: 0 13px;
+        box-sizing: border-box;
+    }
+
+    .also-like .also-like--goods {
+        justify-content: space-around;
+    }
+
+    .company-info {
+        padding-left: 13px;
+        padding-right: 13px;
+        box-sizing: border-box;
+    }
+
+    .brand-info {
+        margin-right: 40px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and(max-width: 1145px) {
+    .company-info {
+        justify-content: center;
+    }
+
+    .brand-info {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .brand-logo {
+        justify-content: center;
+    }
+}
+
+@media screen and(max-width: 1077px) {
+    .also-like--card:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
 
     .search-inp-area,
     .menu-profile>img,
@@ -1156,5 +1234,35 @@ body {
         margin-top: 40px;
     }
 
+    .registration-title__container {
+        display: flex;
+        justify-content: center;
+    }
 
+    .form-n-benefits {
+        flex-direction: column;
+        height: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+        align-items: center;
+    }
+
+    .password-recomendation {
+        margin-bottom: 0;
+    }
+
+    .join-button {
+        margin-bottom: 40px;
+    }
+
+    .benefits-article {
+        width: 358px;
+    }
 }
+
+// @media screen and(max-width: 510px) {
+//     .right-arrow,
+//     .left-arrow {
+//         position: absolute;
+//     }
+// }
