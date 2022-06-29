@@ -1187,8 +1187,8 @@ body {
     margin-top: 20px;
   }
   .cards {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
   }
   .regions {
@@ -1268,6 +1268,68 @@ body {
   .brand-info {
     margin-right: 40px;
   }
+}
+
+.filter-n-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 16px;
+  padding-top: 51px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.filter {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70px;
+  margin-right: 304px;
+  cursor: pointer;
+}
+
+.filter p {
+  margin: 0;
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 296px;
+}
+
+.sort p {
+  margin: 0 10px 0 0;
+}
+
+.trending,
+.size,
+.price-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1145px) {
